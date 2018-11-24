@@ -1,0 +1,8 @@
+.header {
+  background: red; }
+  .header__link {
+    color: blue; }
+
+body {
+  margin: 0;
+  padding: 0; }
