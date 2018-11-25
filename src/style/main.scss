@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -79,7 +80,7 @@ a {
 .about__ipad {
   position: absolute;
   right: 0;
-  bottom: -41em;
+  top: 63em;
   z-index: -1;
 }
 
@@ -136,8 +137,9 @@ a {
     span {
       color: #ffe400;
       font-size: 18px;
-      font-weight: 400;
+      font-weight: 600;
       line-height: 24px;
+      font-family: 'Montserrat', sans-serif;
     }
   }
   .experience-btn {
@@ -148,8 +150,9 @@ a {
     span {
       color: #000;
       font-size: 18px;
-      font-weight: 400;
+      font-weight: 600;
       line-height: 24px;
+      font-family: 'Montserrat', sans-serif;
     }
   }
 }
@@ -343,6 +346,7 @@ a {
           font-size: 13px;
           font-weight: 600;
           text-transform: uppercase;
+          font-family: 'Montserrat', sans-serif;
         }
       }
       .responsive__running-human {
@@ -409,8 +413,9 @@ a {
         span {
           color: #ffffff;
           font-size: 18px;
-          font-weight: 400;
+          font-weight: 600;
           line-height: 24px;
+          font-family: 'Montserrat', sans-serif;
         }
       }
       .join-btn {
@@ -421,8 +426,9 @@ a {
         span {
           color: #000000;
           font-size: 18px;
-          font-weight: 400;
+          font-weight: 600;
           line-height: 24px;
+          font-family: 'Montserrat', sans-serif;
         }
       }
     }
@@ -486,6 +492,153 @@ a {
             text-align: left;
             font-family: 'Muli', sans-serif;
             font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.work-main {
+  background-color: #ffe400;
+  position: relative;
+  .work-title {
+    padding-top: 105px;
+    text-align: center;
+    margin-bottom: 57px;
+    span {
+      color: #e8d100;
+      font-size: 91px;
+      position: absolute;
+      top: 135px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-weight: 900;
+      text-transform: uppercase;
+      z-index: 0;
+    }
+    h3 {
+      color: #000000;
+      font-size: 30px;
+      font-weight: 700;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 4;
+      padding-top: 36px;
+    }
+    .work-menu {
+      margin-top: 65px;
+      ul {
+        display: flex;
+        justify-content: center;
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 8px 18px;
+          border: 1px solid black;
+          margin-right: 7px;
+          a {
+            color: #000000;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 22px;
+            i {
+              color: #ffffff;
+              font-size: 21px;
+              padding-top: 4px;
+            }
+          }
+          &:first-child {
+            display: flex !important;
+            background: #000;
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+.work-gallary {
+  display: flex;
+  flex-wrap: wrap;
+  .gallary-block {
+    display: flex;
+    position: relative;
+    img {
+      max-width: 475px;
+      height: 310px;
+    }
+    .gallary-desc {
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.85);
+      width: 100%;
+      height: 66px;
+      bottom: 0;
+      left: 0;
+      .gallary-wrapper {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        h6 {
+          color: #444444;
+          font-size: 16px;
+          margin-left: 30px;
+          font-weight: 700;
+          line-height: 24.33px;
+          text-transform: uppercase;
+        }
+        span {
+          text-transform: uppercase;
+          color: #757575;
+          font-family: 'Muli', sans-serif;
+          font-size: 10px;
+          font-weight: 400;
+          letter-spacing: 0.4px;
+          margin-left: 7px;
+        }
+        .gallary-buttons-wrapper {
+          display: flex;
+          background: rgba(255, 255, 255, 0.85);
+          border-radius: 30px;
+          position: absolute;
+          right: 20px;
+          top: -22px;
+          justify-content: center;
+          padding: 11px;
+          .cage {
+            border: 1px solid black;
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            background: white;
+            display: flex;
+            margin-right: 12px;
+            a {
+              display: flex;
+              i {
+                transform: rotate(90deg);
+                color: #000;
+              }
+            }
+          }
+          .search-box {
+            border: 1px solid #e3cc00;
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            background: #ffe400;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a {
+              display: flex;
+              i {
+                color: #000;
+              }
+            }
           }
         }
       }
