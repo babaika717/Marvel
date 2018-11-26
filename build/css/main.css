@@ -482,17 +482,26 @@ a {
   flex-wrap: wrap; }
   .work-gallary .gallary-block {
     display: flex;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
     .work-gallary .gallary-block img {
       max-width: 475px;
-      height: 310px; }
+      height: 100%;
+      transition: all .6s; }
+    .work-gallary .gallary-block:hover .gallary-desc {
+      transition: all .6s;
+      -webkit-transform: translate(0);
+              transform: translate(0); }
     .work-gallary .gallary-block .gallary-desc {
       position: absolute;
       background-color: rgba(255, 255, 255, 0.85);
       width: 100%;
       height: 66px;
       bottom: 0;
-      left: 0; }
+      left: 0;
+      transition: all .6s;
+      -webkit-transform: translate(0, 100px);
+      transform: translate(0, 100px); }
       .work-gallary .gallary-block .gallary-desc .gallary-wrapper {
         display: flex;
         height: 100%;
@@ -520,7 +529,8 @@ a {
           right: 20px;
           top: -22px;
           justify-content: center;
-          padding: 11px; }
+          padding: 11px;
+          border: 1px solid #fff600; }
           .work-gallary .gallary-block .gallary-desc .gallary-wrapper .gallary-buttons-wrapper .cage {
             border: 1px solid black;
             width: 30px;
@@ -528,7 +538,8 @@ a {
             border-radius: 30px;
             background: white;
             display: flex;
-            margin-right: 12px; }
+            margin-right: 12px;
+            cursor: pointer; }
             .work-gallary .gallary-block .gallary-desc .gallary-wrapper .gallary-buttons-wrapper .cage a {
               display: flex; }
               .work-gallary .gallary-block .gallary-desc .gallary-wrapper .gallary-buttons-wrapper .cage a i {
@@ -543,8 +554,93 @@ a {
             background: #ffe400;
             display: flex;
             justify-content: center;
-            align-items: center; }
+            align-items: center;
+            cursor: pointer; }
             .work-gallary .gallary-block .gallary-desc .gallary-wrapper .gallary-buttons-wrapper .search-box a {
               display: flex; }
               .work-gallary .gallary-block .gallary-desc .gallary-wrapper .gallary-buttons-wrapper .search-box a i {
                 color: #000; }
+
+.service-main {
+  position: relative;
+  overflow: hidden; }
+  .service-main .service-title {
+    margin-top: 160px;
+    margin-bottom: 120px; }
+    .service-main .service-title h1 {
+      color: #ededed;
+      position: absolute;
+      right: 0;
+      margin-right: 315px;
+      -webkit-transform: translate(-50%);
+              transform: translate(-50%);
+      font-size: 91px;
+      font-weight: 900;
+      text-transform: uppercase;
+      line-height: 66px;
+      z-index: -1; }
+    .service-main .service-title span {
+      color: #444444;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+      display: block;
+      margin-right: 20px;
+      padding-top: 44px;
+      text-align: right; }
+    .service-main .service-title .service-wrapper {
+      margin-top: 150px;
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      margin-left: auto;
+      flex-wrap: wrap; }
+      .service-main .service-title .service-wrapper .service-block {
+        max-width: 214px;
+        padding-right: 40px;
+        padding-bottom: 60px;
+        text-align: center;
+        height: 100%;
+        max-height: 190px;
+        border-right: 1px solid #e6e6e6;
+        border-bottom: 1px solid #e6e6e6; }
+        .service-main .service-title .service-wrapper .service-block a i {
+          color: #444444;
+          font-size: 48px;
+          font-weight: 400;
+          line-height: 22px;
+          margin-bottom: 40px; }
+        .service-main .service-title .service-wrapper .service-block h6 {
+          color: #444444;
+          font-weight: 700;
+          font-size: 18px;
+          text-transform: uppercase;
+          margin-bottom: 35px; }
+        .service-main .service-title .service-wrapper .service-block p {
+          font-size: 13px;
+          line-height: 24px;
+          color: #757575; }
+        .service-main .service-title .service-wrapper .service-block:nth-child(2) {
+          padding-left: 40px;
+          padding-right: 0;
+          border-right: none; }
+        .service-main .service-title .service-wrapper .service-block:nth-child(3) {
+          padding-top: 50px;
+          padding-bottom: 0;
+          border-bottom: none; }
+        .service-main .service-title .service-wrapper .service-block:last-child {
+          padding-left: 40px;
+          padding-top: 50px;
+          padding-right: 0;
+          padding-bottom: 0;
+          border: none; }
+  .service-main .service__md-circle {
+    position: absolute;
+    bottom: -22%;
+    left: -17%;
+    z-index: 5; }
+  .service-main .service__people {
+    position: absolute;
+    bottom: 0;
+    left: 0; }

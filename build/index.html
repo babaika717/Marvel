@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link href="https://unpkg.com/ionicons@4.4.7/dist/css/ionicons.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<link type="text/css" rel="stylesheet" href="lib/lightgallary/lightgallery.min.css" />
 </head>
 <body>
 
@@ -245,8 +246,10 @@
 	</div>
 	
 	<div class="work-gallary">
-		<div class="gallary-block">
-			<img src="img/img1.jpg" alt="">
+		<div class="gallary-block" data-src="../img/img1.jpg">
+			<a href="img/img1.jpg">
+				<img src="img/img1.jpg" alt="">
+			</a>
 			<div class="gallary-desc">
 				<div class="gallary-wrapper">
 					<h6>FULLWIDTH SLIDESHOW</h6>
@@ -258,8 +261,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="gallary-block">
-			<img src="img/img2.jpg" alt="">
+		<div class="gallary-block" data-src="../img/img2.jpg">
+			<a href="img/img2.jpg">
+				<img src="img/img2.jpg" alt="">
+			</a>
 			<div class="gallary-desc">
 				<div class="gallary-wrapper">
 					<h6>FULLWIDTH SLIDESHOW</h6>
@@ -271,8 +276,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="gallary-block">
-			<img src="img/img3.jpg" alt="">
+		<div class="gallary-block" data-src="../img/img3.jpg">
+			<a href="img/img3.jpg">
+				<img src="img/img3.jpg" alt="">
+			</a>
 			<div class="gallary-desc">
 				<div class="gallary-wrapper">
 					<h6>FULLWIDTH SLIDESHOW</h6>
@@ -284,8 +291,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="gallary-block">
-			<img src="img/img4.jpg" alt="">
+		<div class="gallary-block" data-src="../img/img4.jpg">
+			<a href="img/img4.jpg">
+				<img src="img/img4.jpg" alt="">
+			</a>
 			<div class="gallary-desc">
 				<div class="gallary-wrapper">
 					<h6>FULLWIDTH SLIDESHOW</h6>
@@ -297,8 +306,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="gallary-block">
-			<img src="img/img5.jpg" alt="">
+		<div class="gallary-block" data-src="../img/img5.jpg">
+			<a href="img/img5.jpg">
+				<img src="img/img5.jpg" alt="">
+			</a>
 			<div class="gallary-desc">
 				<div class="gallary-wrapper">
 					<h6>FULLWIDTH SLIDESHOW</h6>
@@ -310,8 +321,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="gallary-block">
-			<img src="img/img6.jpg" alt="">
+		<div class="gallary-block" data-src="../img/img6.jpg">
+			<a href="img/img6.jpg">
+				<img src="img/img6.jpg" alt="">
+			</a>
 			<div class="gallary-desc">
 				<div class="gallary-wrapper">
 					<h6>FULLWIDTH SLIDESHOW</h6>
@@ -323,8 +336,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="gallary-block">
-			<img src="img/img7.jpg" alt="">
+		<div class="gallary-block" data-src="../img/img7.jpg">
+			<a href="img/img7.jpg">
+				<img src="img/img7.jpg" alt="">
+			</a>
 			<div class="gallary-desc">
 				<div class="gallary-wrapper">
 					<h6>FULLWIDTH SLIDESHOW</h6>
@@ -336,8 +351,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="gallary-block">
-			<img src="img/img8.jpg" alt="">
+		<div class="gallary-block" data-src="../img/img8.jpg">
+			<a href="img/img8.jpg">
+				<img src="img/img8.jpg" alt="">
+			</a>
 			<div class="gallary-desc">
 				<div class="gallary-wrapper">
 					<h6>FULLWIDTH SLIDESHOW</h6>
@@ -350,6 +367,41 @@
 			</div>
 		</div>
 	</div>
+
+	<!--=================================SERVICE==============================-->
+
+	<div class="service-main">
+		<div class="container">
+			<div class="service-title">
+				<h1>Service</h1>
+				<span>CLEAN IDEA AND UNIQUE DESIGN</span>
+				<div class="service-wrapper">
+					<div class="service-block">
+						<a href="#"><i class="ion ion-ios-settings"></i></a>
+						<h6>Excellent Features</h6>
+						<p>Lorem ipsum doloar sit amet meconstur adipiscing.</p>
+					</div>
+					<div class="service-block">
+						<a href="#"><i class="ion ion-ios-camera"></i></a>
+						<h6>Simple & Clean</h6>
+						<p>Lorem ipsum doloar sit amet meconstur adipiscing.</p>
+					</div>
+					<div class="service-block">
+						<a href="#"><i class="ion ion-md-briefcase"></i></a>
+						<h6>Parallax Effect</h6>
+						<p>Lorem ipsum doloar sit amet meconstur adipiscing.</p>
+					</div>
+					<div class="service-block">
+						<a href="#"><i class="ion ion-ios-notifications"></i></a>
+						<h6>24/7 Support</h6>
+						<p>Lorem ipsum doloar sit amet meconstur adipiscing.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<img class="service__md-circle" src="img/medium-circle.png" alt="">
+		<img class="service__people" src="img/people.png" alt="">
+	</div>
 </main>
 
 
@@ -360,6 +412,9 @@
 
 <script	src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="js/main.js"></script>
+<script src="lib/lightgallary/lightgallery.min.js"></script>
+<script src="lib/lightgallary/lg-zoom.min.js"></script>
+<script src="lib/lightgallary/lg-fullscreen.min.js"></script>
 	
 </body>
 </html>
