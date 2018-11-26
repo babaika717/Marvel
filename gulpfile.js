@@ -3,6 +3,7 @@
 var gulp 	 	= require("gulp"),
 	watch 	 	= require("gulp-watch"),
 	preFixer 	= require("gulp-autoprefixer"),
+	plumber		= require("gulp-plumber"),
 	sass 	 	= require("gulp-sass"),
 	rigger 	 	= require("gulp-rigger"),
 	browserSync	= require("browser-sync"),
@@ -62,6 +63,7 @@ var path = {
 
 	gulp.task("style:build", function() {
 		gulp.src(path.src.style)
+        .pipe(plumber())
 		.pipe(sass())
 		.pipe(preFixer())
 		.pipe(gulp.dest(path.build.css))
