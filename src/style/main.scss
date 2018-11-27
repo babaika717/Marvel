@@ -1,7 +1,7 @@
 @import "partials/header";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800');
 @import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800,900');
-
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900');
 
 body {
   margin: 0;
@@ -756,4 +756,174 @@ a {
     bottom: 0;
     left: 0;
   }
+}
+
+.pricing-main {
+  position: relative;
+  height: 1200px;
+  background: url("../img/price-bg.png") no-repeat;
+  .pricing-title {
+    padding-top: 100px;
+    text-align: center;
+    position: relative;
+    h1 {
+      color: #e6d119;
+      font-size: 91px;
+      font-weight: 900;
+      position: absolute;
+      top: 100px;
+      line-height: 66px;
+      left: 50%;
+      transform: translate(-50%);
+      text-transform: uppercase;
+      z-index: 1;
+    }
+    span {
+      color: #010101;
+      font-size: 30px;
+      font-weight: 700;
+      position: relative;
+      z-index: 2;
+      top: 36px;
+      text-transform: uppercase;
+    }
+    .pricing-main-wrapper {
+      margin-top: 210px;
+      display: flex;
+      .pricing-wrapper-block {
+        display: block;
+        margin-right: 30px;
+        position: relative;
+        h6 {
+          color: #444444;
+          font-family: 'Muli', sans-serif;
+          background: #e6e6e6;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 24px;
+          top: -39px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 39px;
+          position: absolute;
+        }
+        .pricing-block {
+          width: 361px;
+          height: 212px;
+          position: relative;
+          img {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+          }
+          h4 {
+            position: relative;
+            display: block;
+            z-index: 2;
+            color: #ffffff;
+            font-family: "Poppins", sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            padding-top: 30px;
+          }
+          p {
+            position: relative;
+            z-index: 2;
+            color: #ffffff;
+            font-family: "Muli", sans-serif;
+            line-height: 24px;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 400;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 53px;
+            i {
+              font-family: "Muli", sans-serif;
+              font-size: 40px;
+              font-style: normal;
+              margin-top: -51px;
+            }
+            span {
+              font-size: 60px;
+              font-weight: 700;
+              font-family: "Poppins", sans-serif;
+              color: #fff;
+              margin-top: -100px;
+            }
+          }
+          .price-describe {
+            color: #dbdbdb;
+            font-family: 'Muli', sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            text-transform: none;
+            margin-top: 32px;
+          }
+        }
+        .pricing-desc {
+          border: 1px solid #f1f1f1;
+          background: #FFFFFF;
+          ul {
+            margin-top: 60px;
+            li {
+              border-bottom: 1px solid #f0f0f0;
+              &:last-child {
+                border: none;
+              }
+              a {
+                color: #808080;
+                font-family: 'Muli', sans-serif;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 60px;
+                &:before {
+                  content: "\f3d1";
+                  display: inline-block;
+                  font-family: "Ionicons";
+                  width: 5px;
+                  margin-right: 8px;
+                  height: 5px;
+                }
+              }
+              &:nth-child(6) a::before {
+                content: none;
+              }
+              &:nth-child(7) a::before {
+                content: none;
+              }
+            }
+          }
+        }
+        button {
+          color: #444444;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 40px;
+          display: block;
+          background: #FFFFFF;
+          margin-top: 4px;
+          cursor: pointer;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.pricing-arrow:before {
+  content: "\f3d1" !important;
+  display: inline-block;
+  font-family: "Ionicons";
+  width: 5px;
+  margin-right: 8px;
+  height: 5px;
 }
