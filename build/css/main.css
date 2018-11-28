@@ -792,3 +792,118 @@ a {
   width: 5px;
   margin-right: 8px;
   height: 5px; }
+
+.expert-main {
+  position: relative;
+  margin-top: 255px;
+  margin-bottom: 358px; }
+  .expert-main .expert-title {
+    text-align: center; }
+    .expert-main .expert-title h1 {
+      color: #f0f0f0;
+      font-size: 91px;
+      font-weight: 900;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      -webkit-transform: translate(-50%);
+              transform: translate(-50%);
+      text-transform: uppercase;
+      z-index: -1; }
+    .expert-main .expert-title span {
+      color: #444444;
+      font-size: 30px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding-top: 58px;
+      display: block; }
+    .expert-main .expert-title .expert-wrapper {
+      display: flex;
+      margin-top: 130px;
+      justify-content: center; }
+      .expert-main .expert-title .expert-wrapper .expert-wrapper-main {
+        margin-right: 30px;
+        position: relative; }
+        .expert-main .expert-title .expert-wrapper .expert-wrapper-main .expert-block {
+          display: flex; }
+        .expert-main .expert-title .expert-wrapper .expert-wrapper-main .expert-desc {
+          background: #ebebeb;
+          margin-top: 8px;
+          padding: 24px 24px 19px; }
+          .expert-main .expert-title .expert-wrapper .expert-wrapper-main .expert-desc h4 {
+            color: #444444;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding-bottom: 23px; }
+          .expert-main .expert-title .expert-wrapper .expert-wrapper-main .expert-desc p {
+            color: #444444;
+            padding-top: 21px;
+            font-size: 11px;
+            font-weight: 400;
+            text-transform: uppercase;
+            border-top: 1px solid #b7b7b7; }
+        .expert-main .expert-title .expert-wrapper .expert-wrapper-main:last-child {
+          margin-right: 0; }
+        .expert-main .expert-title .expert-wrapper .expert-wrapper-main:hover .expert-hover {
+          visibility: visible;
+          opacity: 1;
+          transition: all .6s; }
+        .expert-main .expert-title .expert-wrapper .expert-wrapper-main:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          visibility: hidden;
+          opacity: 0;
+          left: 0;
+          overflow: hidden;
+          background: #ffe400;
+          transition: all .6s; }
+        .expert-main .expert-title .expert-wrapper .expert-wrapper-main:hover::before {
+          visibility: visible;
+          opacity: 1;
+          left: 0;
+          transition: all .6s; }
+        .expert-main .expert-title .expert-wrapper .expert-wrapper-main .expert-hover {
+          padding: 40px;
+          position: absolute;
+          top: 0;
+          visibility: hidden;
+          opacity: 0;
+          transition: all .6s; }
+          .expert-main .expert-title .expert-wrapper .expert-wrapper-main .expert-hover h3 {
+            color: #000000;
+            font-size: 24px;
+            margin-top: 30px;
+            font-weight: 700;
+            text-transform: uppercase; }
+          .expert-main .expert-title .expert-wrapper .expert-wrapper-main .expert-hover span {
+            color: #000000;
+            font-size: 16px;
+            font-weight: 600;
+            padding-top: 22px;
+            text-transform: uppercase; }
+          .expert-main .expert-title .expert-wrapper .expert-wrapper-main .expert-hover p {
+            color: #000000;
+            font-family: 'Muli', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-top: 75px;
+            padding-bottom: 125px;
+            border-bottom: 1px solid #ab9900; }
+          .expert-main .expert-title .expert-wrapper .expert-wrapper-main .expert-hover ul {
+            display: flex;
+            justify-content: center;
+            margin-top: 38px; }
+            .expert-main .expert-title .expert-wrapper .expert-wrapper-main .expert-hover ul li {
+              margin-right: 25px; }
+              .expert-main .expert-title .expert-wrapper .expert-wrapper-main .expert-hover ul li a i {
+                color: #6b6000;
+                font-size: 22px;
+                font-weight: 400;
+                letter-spacing: 0.88px; }
+              .expert-main .expert-title .expert-wrapper .expert-wrapper-main .expert-hover ul li:last-child {
+                margin-right: 0; }
