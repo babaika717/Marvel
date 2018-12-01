@@ -52,7 +52,11 @@ a {
           font-weight: 300;
           margin-right: 60px;
           text-transform: uppercase;
-          letter-spacing: 0.56px; }
+          letter-spacing: 0.56px;
+          transition: all .4s; }
+        .main-menu .menu-wrapper .menu-nav ul li:hover a {
+          color: #ffe400;
+          transition: all .4s; }
         .main-menu .menu-wrapper .menu-nav ul li:nth-child(1) a {
           color: #ffe400; }
         .main-menu .menu-wrapper .menu-nav ul li:last-child a {
@@ -112,13 +116,22 @@ a {
     color: #ffe400;
     border: 1px solid #a6a6a6;
     background-color: #000;
-    margin-right: 25px; }
+    margin-right: 25px;
+    transition: all .5s; }
     .about-buttons .more-info-btn span {
       color: #ffe400;
       font-size: 18px;
       font-weight: 600;
       line-height: 24px;
-      font-family: 'Montserrat', sans-serif; }
+      font-family: 'Montserrat', sans-serif;
+      transition: all .5s; }
+    .about-buttons .more-info-btn:hover {
+      background-color: #ffe400;
+      border: none;
+      transition: all .5s; }
+    .about-buttons .more-info-btn:hover span {
+      color: #000;
+      transition: all .5s; }
   .about-buttons .experience-btn {
     background-color: #ffe400;
     cursor: pointer;
@@ -130,6 +143,13 @@ a {
       font-weight: 600;
       line-height: 24px;
       font-family: 'Montserrat', sans-serif; }
+    .about-buttons .experience-btn:hover {
+      background-color: #000;
+      border: 1px solid #a6a6a6;
+      transition: all .5s; }
+    .about-buttons .experience-btn:hover span {
+      color: #ffe400;
+      transition: all .5s; }
 
 .about-guarantee {
   display: flex;
@@ -292,13 +312,21 @@ a {
         background-color: #ffe400;
         width: 127px;
         height: 43px;
-        cursor: pointer; }
+        cursor: pointer;
+        transition: all .5s; }
         .responsive-main .responsive-title .responsive-desc button a {
           color: #000000;
           font-size: 13px;
           font-weight: 600;
           text-transform: uppercase;
-          font-family: 'Montserrat', sans-serif; }
+          font-family: 'Montserrat', sans-serif;
+          transition: all .5s; }
+        .responsive-main .responsive-title .responsive-desc button:hover {
+          background: #000000;
+          transition: all .5s; }
+        .responsive-main .responsive-title .responsive-desc button:hover a {
+          color: #ffe400;
+          transition: all .5s; }
       .responsive-main .responsive-title .responsive-desc .responsive__running-human {
         position: absolute;
         top: -63px;
@@ -351,24 +379,42 @@ a {
         background-color: transparent;
         border: 1px solid white;
         margin-right: 24px;
-        cursor: pointer; }
+        cursor: pointer;
+        transition: all .5s; }
         .who-we-are-main .who-we-are-title .btn-group .more-info-btn span {
           color: #ffffff;
           font-size: 18px;
           font-weight: 600;
           line-height: 24px;
-          font-family: 'Montserrat', sans-serif; }
+          font-family: 'Montserrat', sans-serif;
+          transition: all .5s; }
+        .who-we-are-main .who-we-are-title .btn-group .more-info-btn:hover {
+          background: #ffe400;
+          border: none;
+          transition: all .5s; }
+        .who-we-are-main .who-we-are-title .btn-group .more-info-btn:hover span {
+          color: #000000;
+          transition: all .5s; }
       .who-we-are-main .who-we-are-title .btn-group .join-btn {
         width: 226px;
         height: 62px;
         background-color: #ffe400;
-        cursor: pointer; }
+        cursor: pointer;
+        transition: all .5s; }
         .who-we-are-main .who-we-are-title .btn-group .join-btn span {
           color: #000000;
           font-size: 18px;
           font-weight: 600;
           line-height: 24px;
-          font-family: 'Montserrat', sans-serif; }
+          font-family: 'Montserrat', sans-serif;
+          transition: all .5s; }
+        .who-we-are-main .who-we-are-title .btn-group .join-btn:hover {
+          background: transparent;
+          border: 1px solid white;
+          transition: all .5s; }
+        .who-we-are-main .who-we-are-title .btn-group .join-btn:hover span {
+          color: #ffffff;
+          transition: all .5s; }
 
 .features-main {
   position: relative; }
@@ -821,7 +867,8 @@ a {
     .expert-main .expert-title .expert-wrapper {
       display: flex;
       margin-top: 130px;
-      justify-content: center; }
+      justify-content: center;
+      cursor: pointer; }
       .expert-main .expert-title .expert-wrapper .expert-wrapper-main {
         margin-right: 30px;
         position: relative; }
@@ -907,3 +954,170 @@ a {
                 letter-spacing: 0.88px; }
               .expert-main .expert-title .expert-wrapper .expert-wrapper-main .expert-hover ul li:last-child {
                 margin-right: 0; }
+
+.impressed-main {
+  background: url("../img/footer-background.png") no-repeat;
+  text-align: center; }
+  .impressed-main h1 {
+    padding-top: 110px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase; }
+  .impressed-main span {
+    padding-top: 12px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400; }
+  .impressed-main .btn-group {
+    padding-top: 106px;
+    display: flex;
+    padding-bottom: 95px;
+    justify-content: center; }
+    .impressed-main .btn-group .purchase-btn {
+      background-color: #ffe400;
+      width: 170px;
+      height: 49px;
+      color: #000000;
+      font-family: "Lato", sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-right: 20px;
+      cursor: pointer; }
+    .impressed-main .btn-group .get-in-btn {
+      width: 170px;
+      height: 49px;
+      background-color: #ffffff;
+      color: #212121;
+      font-family: "Lato", sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      cursor: pointer; }
+
+.news-main {
+  position: relative;
+  text-align: center;
+  padding-top: 140px;
+  padding-bottom: 160px; }
+  .news-main .news-title {
+    position: relative; }
+    .news-main .news-title h1 {
+      color: #f0f0f0;
+      font-size: 91px;
+      line-height: 66px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      -webkit-transform: translate(-50%);
+              transform: translate(-50%);
+      font-weight: 900;
+      z-index: 0;
+      text-transform: uppercase; }
+    .news-main .news-title span {
+      color: #444444;
+      font-size: 30px;
+      font-weight: 700;
+      padding-top: 36px;
+      display: block;
+      position: relative;
+      z-index: 5;
+      text-transform: uppercase; }
+  .news-main .news-wrapper-main {
+    display: flex;
+    margin-top: 118px;
+    justify-content: center; }
+    .news-main .news-wrapper-main .news-block {
+      max-width: 263px;
+      margin-right: 27px; }
+      .news-main .news-wrapper-main .news-block img {
+        display: flex; }
+      .news-main .news-wrapper-main .news-block .news-block--wrapper {
+        position: relative;
+        padding: 46px 26px 37px; }
+        .news-main .news-wrapper-main .news-block .news-block--wrapper h6 {
+          position: absolute;
+          color: #444444;
+          font-size: 12px;
+          font-weight: 700;
+          text-transform: uppercase;
+          width: 143px;
+          height: 33px;
+          background-color: #f9f9f9;
+          display: flex;
+          border-radius: 20px;
+          align-items: center;
+          justify-content: center;
+          left: 50%;
+          top: -18px;
+          -webkit-transform: translate(-50%);
+                  transform: translate(-50%); }
+        .news-main .news-wrapper-main .news-block .news-block--wrapper h5 {
+          color: #444444;
+          font-size: 18px;
+          font-weight: 700;
+          text-transform: uppercase; }
+        .news-main .news-wrapper-main .news-block .news-block--wrapper ul {
+          display: flex;
+          justify-content: center; }
+          .news-main .news-wrapper-main .news-block .news-block--wrapper ul li a {
+            font-family: "Open Sans", sans-serif;
+            font-size: 10px;
+            color: #969595;
+            text-transform: uppercase;
+            margin-right: 2px; }
+        .news-main .news-wrapper-main .news-block .news-block--wrapper p {
+          color: #757575;
+          margin-top: 30px;
+          font-size: 13px;
+          font-weight: 400;
+          text-align: left; }
+      .news-main .news-wrapper-main .news-block button {
+        width: 98px;
+        height: 26px;
+        border: 1px solid #ffffff;
+        background-color: #f9f9f9;
+        color: #444444;
+        font-size: 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all .5s; }
+        .news-main .news-wrapper-main .news-block button:hover {
+          border: 1px solid #000000;
+          background-color: #ffe400;
+          transition: all .5s; }
+      .news-main .news-wrapper-main .news-block:nth-child(4) {
+        margin-right: 0; }
+
+.contacts-main {
+  background: url("../img/background-contacts.png") no-repeat;
+  padding-top: 120px; }
+  .contacts-main .contacts-title {
+    position: relative;
+    text-align: center; }
+    .contacts-main .contacts-title h1 {
+      color: #e6e6e6;
+      font-size: 91px;
+      line-height: 66px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      -webkit-transform: translate(-50%);
+      transform: translate(-50%);
+      font-weight: 900;
+      z-index: 0;
+      text-transform: uppercase; }
+    .contacts-main .contacts-title span {
+      color: #444444;
+      font-size: 30px;
+      font-weight: 700;
+      padding-top: 36px;
+      display: block;
+      position: relative;
+      z-index: 5;
+      text-transform: uppercase; }
+  .contacts-main .contacts-form-wrapper {
+    margin-top: 173px; }
