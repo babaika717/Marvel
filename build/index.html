@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>MARVEL</title>
 	<link rel="stylesheet" href="css/main.css">
 	<link href="https://unpkg.com/ionicons@4.4.7/dist/css/ionicons.min.css" rel="stylesheet">
@@ -15,7 +16,9 @@
 		<div class="container">
 			<div class="menu-wrapper">
 				<div class="menu-logo">
-					<img src="img/logotype.png" alt="">
+                    <a href="index.html">
+					    <img src="img/logotype.png" alt="">
+                    </a>
 				</div>
 				<div class="menu-nav">
 					<ul>
@@ -48,8 +51,8 @@
 		</div>
 		<img class="about__big-circle" src="img/circle-big.png" alt="">
 		<div class="about-buttons">
-			<button class="more-info-btn"><span>More info</span></button>
-			<button class="experience-btn"><span>Join Experience</span></button>
+			<button type="button" class="more-info-btn"><span>More info</span></button>
+			<button type="button" class="experience-btn"><span>Join Experience</span></button>
 		</div>
 		<div class="about-guarantee">
 			<div class="about-guarantee-blocks">
@@ -115,7 +118,7 @@
 						<li><a href="#"><i class="fas fa-star"></i>Powerful Admin Panel.</a></li>
 						<li><a href="#"><i class="fas fa-star"></i>24/7 Support.</a></li>
 					</ul>
-					<button><a>purchase</a></button>
+					<button type="button"><a>purchase</a></button>
 					<img class="responsive__running-human" src="img/running-human.png" alt="">
 				</div>
 			</div>
@@ -133,8 +136,8 @@
                     sed diam nonummy nibh and euismod tincidunt ut laoreet dolore
                     magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
                 <div class="btn-group">
-                    <button class="more-info-btn"><span>More info</span></button>
-                    <button class="join-btn"><span>Join Experience</span></button>
+                    <button type="button" class="more-info-btn"><span>More info</span></button>
+                    <button type="button" class="join-btn"><span>Join Experience</span></button>
                 </div>
             </div>
         </div>
@@ -232,7 +235,7 @@
 			<div class="work-title">
 				<span>Work</span>
 				<h3>Our Protfolio</h3>
-				<div class="work-menu">
+				<div id="gallary-filtering" class="work-menu">
 					<ul>
 						<li class="work-menu-active"><a href="#"><i class="ion ion-md-apps"></i></a></li>
 						<li><a href="#">Buisness</a></li>
@@ -246,7 +249,7 @@
 	</div>
 	
 	<div class="work-gallary">
-		<div class="gallary-block" data-src="../img/img1.jpg">
+		<div class="gallary-block" data-rel="business" data-src="../img/img1.jpg">
 			<a href="img/img1.jpg">
 				<img src="img/img1.jpg" alt="">
 			</a>
@@ -375,29 +378,29 @@
 			<div class="service-title">
 				<h1>Service</h1>
 				<span>CLEAN IDEA AND UNIQUE DESIGN</span>
-				<div class="service-wrapper">
-					<div class="service-block">
-						<a href="#"><i class="ion ion-ios-settings"></i></a>
-						<h6>Excellent Features</h6>
-						<p>Lorem ipsum doloar sit amet meconstur adipiscing.</p>
-					</div>
-					<div class="service-block">
-						<a href="#"><i class="ion ion-ios-camera"></i></a>
-						<h6>Simple & Clean</h6>
-						<p>Lorem ipsum doloar sit amet meconstur adipiscing.</p>
-					</div>
-					<div class="service-block">
-						<a href="#"><i class="ion ion-md-briefcase"></i></a>
-						<h6>Parallax Effect</h6>
-						<p>Lorem ipsum doloar sit amet meconstur adipiscing.</p>
-					</div>
-					<div class="service-block">
-						<a href="#"><i class="ion ion-ios-notifications"></i></a>
-						<h6>24/7 Support</h6>
-						<p>Lorem ipsum doloar sit amet meconstur adipiscing.</p>
-					</div>
-				</div>
-			</div>
+            </div>
+            <div class="service-wrapper">
+                <div class="service-block">
+                    <a href="#"><i class="ion ion-ios-settings"></i></a>
+                    <h6>Excellent Features</h6>
+                    <p>Lorem ipsum doloar sit amet meconstur adipiscing.</p>
+                </div>
+                <div class="service-block">
+                    <a href="#"><i class="ion ion-ios-camera"></i></a>
+                    <h6>Simple & Clean</h6>
+                    <p>Lorem ipsum doloar sit amet meconstur adipiscing.</p>
+                </div>
+                <div class="service-block">
+                    <a href="#"><i class="ion ion-md-briefcase"></i></a>
+                    <h6>Parallax Effect</h6>
+                    <p>Lorem ipsum doloar sit amet meconstur adipiscing.</p>
+                </div>
+                <div class="service-block">
+                    <a href="#"><i class="ion ion-ios-notifications"></i></a>
+                    <h6>24/7 Support</h6>
+                    <p>Lorem ipsum doloar sit amet meconstur adipiscing.</p>
+                </div>
+            </div>
 		</div>
 		<img class="service__md-circle" src="img/medium-circle.png" alt="">
 		<img class="service__people" src="img/people.png" alt="">
@@ -429,7 +432,7 @@
 								<li><a href="#"> - </a></li>
 							</ul>
 						</div>
-						<button>Get Started Now</button>
+						<button type="button">Get Started Now</button>
 					</div>
 					<div class="pricing-wrapper-block">
 						<h6>Most Popular</h6>
@@ -470,7 +473,7 @@
 								<li><a class="pricing-arrow" href="#">24/7 Support</a></li>
 							</ul>
 						</div>
-						<button>Get Started Now</button>
+						<button type="button">Get Started Now</button>
 					</div>
 				</div>
 			</div>
@@ -569,8 +572,8 @@
             <h1>Are You Impressed By Our Work?</h1>
             <span>Durabitur commodo ras non urna mauris mollis auctor proin laoreet</span>
             <div class="btn-group">
-                <button class="purchase-btn">PURCHASE NOW</button>
-                <button class="get-in-btn">GET IN TOUCH</button>
+                <button type="button" class="purchase-btn">PURCHASE NOW</button>
+                <button type="button" class="get-in-btn">GET IN TOUCH</button>
             </div>
         </div>
     </div>
@@ -597,7 +600,7 @@
                         <p>Lorem Ipsum is simply dummy text of the
                             rinting and typesette industry lorem Ipsum has ...</p>
                     </div>
-                    <button>Read More</button>
+                    <button type="button">Read More</button>
                 </div>
                 <div class="news-block">
                     <img src="img/banner2.png" alt="">
@@ -612,7 +615,7 @@
                         <p>Lorem Ipsum is simply dummy text of the
                             rinting and typesette industry lorem Ipsum has ...</p>
                     </div>
-                    <button>Read More</button>
+                    <button type="button">Read More</button>
                 </div>
                 <div class="news-block">
                     <img src="img/banner3.png" alt="">
@@ -627,7 +630,7 @@
                         <p>Lorem Ipsum is simply dummy text of the
                             rinting and typesette industry lorem Ipsum has ...</p>
                     </div>
-                    <button>Read More</button>
+                    <button type="button">Read More</button>
                 </div>
                 <div class="news-block">
                     <img src="img/banner4.png" alt="">
@@ -642,7 +645,7 @@
                         <p>Lorem Ipsum is simply dummy text of the
                             rinting and typesette industry lorem Ipsum has ...</p>
                     </div>
-                    <button>Read More</button>
+                    <button type="button">Read More</button>
                 </div>
             </div>
         </div>
@@ -671,11 +674,53 @@
                         <input id="subj" type="text" placeholder="Subject">
                     </label>
                     <textarea name="message" cols="30" rows="10" placeholder="Type your message"></textarea>
-                    <button type="submit">Send</button>
+                    <div class="send-btn">
+                        <button type="submit">Send</button>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
+
+    <!--====================================FOOTER================================-->
+
+    <footer>
+        <div class="locate-us-main">
+            <div class="container">
+                <div class="locate-title">
+                    <h1>Locate us on map<i class="ion ion-ios-arrow-down"></i></h1>
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61624.83874713138!2d31.979573155273236!3d46.95267426215411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c5cb89fb7213d5%3A0x970e39fab9e05680!2z0J3QuNC60L7Qu9Cw0LXQsiwg0J3QuNC60L7Qu9Cw0LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA1NDAwMA!5e0!3m2!1sru!2sua!4v1543757405413" width="100%" height="500" allowfullscreen></iframe>
+        </div>
+        <div class="soc-icons-main">
+            <div class="container">
+                <div class="icons-wrapper">
+                    <div class="soc-icons-phone">
+                        <img src="img/footer-phone.png" alt="">
+                        <a href="tel:(999)00-123-456-789">Phone : (999) 123-456-789</a>
+                    </div>
+                    <div class="soc-icons-footer">
+                        <ul>
+                            <li><a href="#"><i class="ion ion-logo-twitter"></i></a></li>
+                            <li><a href="#"><i class="ion ion-logo-linkedin"></i></a></li>
+                            <li><a href="#"><i class="ion ion-logo-facebook"></i></a></li>
+                            <li><a href="#"><i class="ion ion-logo-skype"></i></a></li>
+                            <li><a href="#"><i class="ion ion-logo-instagram"></i></a></li>
+                            <li><a href="#"><i class="ion ion-logo-apple"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="soc-icons-adress">
+                        <img src="img/footer-globo.png" alt="">
+                        <span>123 state, South America, 205</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-last-block">
+            <span>All Rights Reserved © 2018</span>
+        </div>
+    </footer>
 
 </main>
 
