@@ -7,6 +7,7 @@ $(document).ready(function () {
 
     $('.locate-title h1').on('click', function () {
         $(this).parent().parent().parent().children('iframe').slideToggle(250);
+        $(this).find('i').toggleClass('map-opened');
     });
 
 
@@ -23,5 +24,15 @@ $(document).ready(function () {
         }, 300);
     });
 
+
+    $('.slider__wrapper').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        autoplay: true,
+        speed: 300,
+        slidesToShow: 1,
+        dotsClass: 'my-dots'
+    });
 
 });
