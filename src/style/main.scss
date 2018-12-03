@@ -728,6 +728,18 @@ a {
   }
 }
 
+.work-active {
+  background: #000 !important;
+  a {
+    color: #ffffff !important;
+  }
+}
+
+.scale-anm {
+  transform: scale(1);
+  transition: all 350ms ease;
+}
+
 .service-main {
   position: relative;
   overflow: hidden;

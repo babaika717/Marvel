@@ -616,6 +616,16 @@ a {
               .work-gallary .gallary-block .gallary-desc .gallary-wrapper .gallary-buttons-wrapper .search-box a i {
                 color: #000; }
 
+.work-active {
+  background: #000 !important; }
+  .work-active a {
+    color: #ffffff !important; }
+
+.scale-anm {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  transition: all 350ms ease; }
+
 .service-main {
   position: relative;
   overflow: hidden;
