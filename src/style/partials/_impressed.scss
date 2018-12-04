@@ -1,0 +1,59 @@
+//impressed
+.impressed-main {
+  background: url("../img/footer-background.png") no-repeat;
+  text-align: center;
+  h1 {
+    padding-top: 110px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  span {
+    padding-top: 12px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .btn-group {
+    padding-top: 106px;
+    display: flex;
+    padding-bottom: 95px;
+    justify-content: center;
+    .purchase-btn {
+      background-color: #ffe400;
+      width: 170px;
+      height: 49px;
+      color: #000000;
+      font-family: "Lato", sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-right: 20px;
+      cursor: pointer;
+      transition: all .5s;
+      &:hover {
+        transition: all .5s;
+        background: #000000;
+        color: #ffe400;
+      }
+    }
+    .get-in-btn {
+      width: 170px;
+      height: 49px;
+      background-color: #ffffff;
+      color: #212121;
+      font-family: "Lato", sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all .5s;
+      &:hover {
+        transition: all .5s;
+        background: #ffe400;
+        color: #000;
+      }
+    }
+  }
+}

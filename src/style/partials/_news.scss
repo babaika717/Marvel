@@ -1,0 +1,112 @@
+//news
+.news-main {
+  position: relative;
+  text-align: center;
+  padding-top: 140px;
+  padding-bottom: 160px;
+  .news-title {
+    position: relative;
+    h1 {
+      color: #f0f0f0;
+      font-size: 91px;
+      line-height: 66px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%);
+      font-weight: 900;
+      z-index: 0;
+      text-transform: uppercase;
+    }
+    span {
+      color: #444444;
+      font-size: 30px;
+      font-weight: 700;
+      padding-top: 36px;
+      display: block;
+      position: relative;
+      z-index: 5;
+      text-transform: uppercase;
+    }
+  }
+  .news-wrapper-main {
+    display: flex;
+    margin-top: 118px;
+    justify-content: center;
+    .news-block {
+      max-width: 263px;
+      margin-right: 27px;
+      img {
+        display: flex;
+      }
+      .news-block--wrapper {
+        position: relative;
+        padding: 46px 26px 37px;
+        h6 {
+          position: absolute;
+          color: #444444;
+          font-size: 12px;
+          font-weight: 700;
+          text-transform: uppercase;
+          width: 143px;
+          height: 33px;
+          background-color: #f9f9f9;
+          display: flex;
+          border-radius: 20px;
+          align-items: center;
+          justify-content: center;
+          left: 50%;
+          top: -18px;
+          transform: translate(-50%);
+        }
+        h5 {
+          color: #444444;
+          font-size: 18px;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+        ul {
+          display: flex;
+          justify-content: center;
+          li {
+            a {
+              font-family: "Open Sans", sans-serif;
+              font-size: 10px;
+              color: #969595;
+              text-transform: uppercase;
+              margin-right: 2px;
+            }
+          }
+        }
+        p {
+          color: #757575;
+          margin-top: 30px;
+          font-size: 13px;
+          font-weight: 400;
+          text-align: left;
+        }
+      }
+      button {
+        width: 98px;
+        height: 26px;
+        border: 1px solid #ffffff;
+        background-color: #f9f9f9;
+        color: #444444;
+        font-size: 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all .5s;
+        &:hover {
+          border: 1px solid #000000;
+          background-color: #ffe400;
+          transition: all .5s;
+        }
+      }
+      &:nth-child(4) {
+        margin-right: 0;
+      }
+    }
+  }
+}

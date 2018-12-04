@@ -1,0 +1,120 @@
+//contacts
+.contacts-main {
+  background: url("../img/background-contacts.png") no-repeat;
+  padding-top: 120px;
+  .contacts-title {
+    position: relative;
+    text-align: center;
+    h1 {
+      color: #e6e6e6;
+      font-size: 91px;
+      line-height: 66px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      -webkit-transform: translate(-50%);
+      transform: translate(-50%);
+      font-weight: 900;
+      z-index: 0;
+      text-transform: uppercase;
+    }
+    span {
+      color: #444444;
+      font-size: 30px;
+      font-weight: 700;
+      padding-top: 36px;
+      display: block;
+      position: relative;
+      z-index: 5;
+      text-transform: uppercase;
+    }
+  }
+  .contacts-form-wrapper {
+    margin-top: 173px;
+    margin-bottom: 89px;
+    form {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      label {
+        display: flex;
+        width: 49%;
+        justify-content: flex-end;
+        margin-right: 16px;
+        margin-bottom: 20px;
+        &:nth-child(2n) {
+          justify-content: flex-start;
+          margin-right: 0;
+        }
+        input {
+          width: 561px;
+          height: 60px;
+          border: 1px solid #dedede;
+          background-color: #ffffff;
+          padding-left: 20px;
+        }
+        input::-webkit-input-placeholder {
+          color: #808080;
+          font-size: 14px;
+        }
+
+        input::-moz-placeholder {
+          color: #808080;
+          font-size: 14px;
+        }
+
+        input:-ms-input-placeholder {
+          color: #808080;
+          font-size: 14px;
+        }
+      }
+      textarea {
+        width: 1140px;
+        height: 509px;
+        border: 1px solid #dedede;
+        background-color: #ffffff;
+        resize: none;
+        margin-bottom: 25px;
+        padding-left: 20px;
+        padding-top: 20px;
+      }
+      textarea:-ms-input-placeholder {
+        color: #808080;
+        font-size: 14px;
+      }
+
+      textarea::-moz-placeholder {
+        color: #808080;
+        font-size: 14px;
+      }
+
+      textarea::-webkit-input-placeholder {
+        color: #808080;
+        font-size: 14px;
+      }
+      .send-btn {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        button {
+          width: 147px;
+          height: 60px;
+          border: 1px solid #dedede;
+          background-color: #ffe400;
+          color: #000000;
+          font-size: 17px;
+          font-weight: 600;
+          line-height: 22px;
+          text-transform: uppercase;
+          cursor: pointer;
+          transition: all .5s;
+          &:hover {
+            background: #0D0A0A;
+            color: #ffe400;
+            transition: all .5s;
+          }
+        }
+      }
+    }
+  }
+}

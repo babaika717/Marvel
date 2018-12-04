@@ -1,0 +1,104 @@
+//service
+.service-main {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 128px;
+  .service-title {
+    margin-top: 160px;
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+    h1 {
+      color: #ededed;
+      position: absolute;
+      left: 0;
+      padding-left: 18px;
+      font-size: 91px;
+      font-weight: 900;
+      text-transform: uppercase;
+      line-height: 66px;
+      z-index: 0;
+    }
+    span {
+      color: #444444;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+      display: block;
+      margin-right: 20px;
+      padding-top: 44px;
+      text-align: right;
+      position: relative;
+      z-index: 3;
+    }
+  }
+  .service-wrapper {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-left: auto;
+    flex-wrap: wrap;
+    .service-block {
+      max-width: 214px;
+      padding-right: 40px;
+      padding-bottom: 60px;
+      text-align: center;
+      height: 100%;
+      max-height: 190px;
+      border-right: 1px solid #e6e6e6;
+      border-bottom: 1px solid #e6e6e6;
+      a i {
+        color: #444444;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 22px;
+        margin-bottom: 40px;
+      }
+      h6 {
+        color: #444444;
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-bottom: 35px;
+      }
+      p {
+        font-size: 13px;
+        line-height: 24px;
+        color: #757575;
+      }
+      &:nth-child(2) {
+        padding-left: 40px;
+        padding-right: 0;
+        border-right: none;
+      }
+      &:nth-child(3) {
+        padding-top: 50px;
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+      &:last-child {
+        padding-left: 40px;
+        padding-top: 50px;
+        padding-right: 0;
+        padding-bottom: 0;
+        border: none;
+      }
+    }
+  }
+  .service__md-circle {
+    position: absolute;
+    bottom: -22%;
+    left: -17%;
+    z-index: 5;
+    width: 43.6vw;
+  }
+  .service__people {
+    position: absolute;
+    bottom: 0;
+    width: 49vw;
+    left: 0;
+    z-index: -1;
+  }
+}
