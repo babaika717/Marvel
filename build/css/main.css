@@ -768,11 +768,14 @@
       text-transform: uppercase; }
     .pricing-main .pricing-title .pricing-main-wrapper {
       margin-top: 210px;
-      display: flex; }
+      display: flex;
+      justify-content: center; }
       .pricing-main .pricing-title .pricing-main-wrapper .pricing-wrapper-block {
         display: block;
         margin-right: 30px;
-        position: relative; }
+        position: relative;
+        cursor: pointer;
+        transition: all .5s ease-in-out; }
         .pricing-main .pricing-title .pricing-main-wrapper .pricing-wrapper-block h6 {
           color: #444444;
           font-family: 'Muli', sans-serif;
@@ -876,6 +879,12 @@
           margin-top: 4px;
           cursor: pointer;
           width: 100%; }
+        .pricing-main .pricing-title .pricing-main-wrapper .pricing-wrapper-block:last-child {
+          margin-right: 0; }
+        .pricing-main .pricing-title .pricing-main-wrapper .pricing-wrapper-block:hover {
+          transition: all .5s ease-in-out;
+          -webkit-transform: scale(1.05);
+                  transform: scale(1.05); }
 
 .pricing-arrow:before {
   content: "\f3d1" !important;
@@ -884,6 +893,40 @@
   width: 5px;
   margin-right: 8px;
   height: 5px; }
+
+@media screen and (max-width: 1280px) {
+  .pricing-main .pricing-title .pricing-main-wrapper .pricing-wrapper-block {
+    max-width: 300px; }
+  .pricing-main .pricing-title .pricing-main-wrapper .pricing-wrapper-block .pricing-block {
+    width: 300px;
+    height: 177px; }
+  .pricing-main .pricing-title .pricing-main-wrapper .pricing-wrapper-block .pricing-block .price-describe {
+    margin-top: 18px; } }
+
+@media screen and (max-width: 991px) {
+  .pricing-main {
+    background: #ffe400; }
+  .pricing-main .pricing-title .pricing-main-wrapper {
+    margin-top: 100px; }
+  .pricing-main .pricing-title .pricing-main-wrapper .pricing-wrapper-block h6 {
+    display: none; }
+  .pricing-main .pricing-title .pricing-main-wrapper {
+    flex-wrap: wrap; }
+  .pricing-main .pricing-title .pricing-main-wrapper .pricing-wrapper-block:nth-child(2) {
+    margin-right: 0;
+    margin-left: 70px; }
+  .pricing-main .pricing-title .pricing-main-wrapper .pricing-wrapper-block:last-child {
+    margin-top: 30px; } }
+
+@media screen and (max-width: 700px) {
+  .pricing-main .pricing-title .pricing-main-wrapper .pricing-wrapper-block {
+    margin-left: 100px !important;
+    margin-right: 100px !important;
+    margin-top: 40px; }
+  .pricing-main .pricing-title h1 {
+    font-size: 15vw; }
+  .pricing-main .pricing-title span {
+    font-size: 5vw; } }
 
 .expert-main {
   position: relative;
@@ -1001,6 +1044,43 @@
                 letter-spacing: 0.88px; }
               .expert-main .expert-title .expert-wrapper .expert-wrapper-main .expert-hover ul li:last-child {
                 margin-right: 0; }
+
+@media screen and (max-width: 1200px) {
+  .expert-main .expert-title .expert-wrapper .expert-wrapper-main {
+    max-width: 300px; }
+  .expert-main .expert-title .expert-wrapper .expert-wrapper-main .expert-block img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .expert-main .expert-title .expert-wrapper .expert-wrapper-main .expert-hover h3 {
+    font-size: 21px; } }
+
+@media screen and (max-width: 991px) {
+  .expert-main {
+    padding-bottom: 150px;
+    padding-top: 100px; }
+  .expert-main .expert-title h1 {
+    margin-top: 100px; }
+  .expert-main .expert-title .expert-wrapper {
+    flex-wrap: wrap;
+    margin-top: 70px; }
+  .expert-main .expert-title .expert-wrapper .expert-wrapper-main:nth-child(2) {
+    margin-right: 0;
+    margin-left: 70px; }
+  .expert-main .expert-title .expert-wrapper .expert-wrapper-main:last-child {
+    margin-top: 40px; } }
+
+@media screen and (max-width: 768px) {
+  .expert-main .expert-title .expert-wrapper .expert-wrapper-main {
+    margin: 40px 100px 0 !important; } }
+
+@media screen and (max-width: 500px) {
+  .expert-main .expert-title .expert-wrapper .expert-wrapper-main {
+    margin: 40px 0 0 !important; }
+  .expert-main .expert-title h1 {
+    font-size: 19vw; }
+  .expert-main .expert-title span {
+    font-size: 7vw; } }
 
 .impressed-main {
   background: url("../img/footer-background.png") no-repeat;

@@ -31,10 +31,13 @@
     .pricing-main-wrapper {
       margin-top: 210px;
       display: flex;
+      justify-content: center;
       .pricing-wrapper-block {
         display: block;
         margin-right: 30px;
         position: relative;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
         h6 {
           color: #444444;
           font-family: 'Muli', sans-serif;
@@ -155,6 +158,13 @@
           cursor: pointer;
           width: 100%;
         }
+        &:last-child {
+          margin-right: 0;
+        }
+        &:hover {
+          transition: all .5s ease-in-out;
+          transform: scale(1.05);
+        }
       }
     }
   }
@@ -167,4 +177,68 @@
   width: 5px;
   margin-right: 8px;
   height: 5px;
+}
+
+@media screen and (max-width: 1280px) {
+
+  .pricing-main .pricing-title .pricing-main-wrapper .pricing-wrapper-block {
+    max-width: 300px;
+  }
+
+  .pricing-main .pricing-title .pricing-main-wrapper .pricing-wrapper-block .pricing-block {
+    width: 300px;
+    height: 177px;
+  }
+
+  .pricing-main .pricing-title .pricing-main-wrapper .pricing-wrapper-block .pricing-block .price-describe {
+    margin-top: 18px;
+  }
+
+}
+
+@media screen and (max-width: 991px) {
+
+  .pricing-main {
+    background: #ffe400;
+  }
+
+  .pricing-main .pricing-title .pricing-main-wrapper {
+    margin-top: 100px;
+  }
+
+  .pricing-main .pricing-title .pricing-main-wrapper .pricing-wrapper-block h6 {
+    display: none;
+  }
+
+  .pricing-main .pricing-title .pricing-main-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .pricing-main .pricing-title .pricing-main-wrapper .pricing-wrapper-block:nth-child(2) {
+    margin-right: 0;
+    margin-left: 70px;
+  }
+
+  .pricing-main .pricing-title .pricing-main-wrapper .pricing-wrapper-block:last-child {
+    margin-top: 30px;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+
+  .pricing-main .pricing-title .pricing-main-wrapper .pricing-wrapper-block {
+    margin-left: 100px !important;
+    margin-right: 100px !important;
+    margin-top: 40px;
+  }
+
+  .pricing-main .pricing-title h1 {
+    font-size: 15vw;
+  }
+
+  .pricing-main .pricing-title span {
+    font-size: 5vw;
+  }
+
 }
