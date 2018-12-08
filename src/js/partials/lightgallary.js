@@ -1,0 +1,3 @@
+//Lightgallary
+
+$(".work-gallary").lightGallery();

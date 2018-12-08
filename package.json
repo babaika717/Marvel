@@ -18,6 +18,8 @@
     "node-sass": "^4.10.0"
   },
   "dependencies": {
+    "audit": "0.0.6",
+    "fix": "0.0.6",
     "gulp-plumber": "^1.2.0"
   }
 }

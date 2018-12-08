@@ -11,14 +11,14 @@ var gulp 	 	= require("gulp"),
 
 var path = {
 
-	build: {	// куда будет складывать готовые файлы после зборки
+	build: {	// куда будет складывать готовые файлы после сборки
 		html: 'build/',
 		js: 'build/js',
 		css: 'build/css'
 	},
 	src: {
 		html: "src/*html",
-		js: "src/js/main.js",
+		js: "src/js/app.js",
 		style: "src/style/**/*.scss"
 	},
 	watch: {	// 	пути к файлам, за которыми будем следить
