@@ -577,6 +577,56 @@
           color: #ffffff;
           transition: all .5s; }
 
+@media screen and (max-width: 1680px) {
+  .responsive-main .responsive__light-lamp {
+    left: 0; }
+  .responsive-main .responsive-title {
+    margin-left: 90px; } }
+
+@media screen and (max-width: 1366px) {
+  .responsive-main .responsive__light-lamp {
+    display: none; }
+  .responsive-main .responsive-title {
+    margin-left: 0; } }
+
+@media screen and (max-width: 991px) {
+  .responsive-main .responsive-title .responsive-desc .responsive__running-human {
+    opacity: .3; }
+  .responsive-main .responsive-title span {
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%); }
+  .responsive-main .responsive-title .responsive-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; } }
+
+@media screen and (max-width: 600px) {
+  .responsive-main .responsive-title .responsive-desc .responsive__running-human {
+    display: none; }
+  .responsive-main .responsive-title span {
+    font-size: 13vw; }
+  .responsive-main .responsive-title .responsive-desc h3 {
+    font-size: 5.5vw; }
+  .responsive-main .responsive-title .responsive-desc p {
+    font-size: 14px; }
+  .responsive-main .responsive-title .responsive-desc ul li a {
+    font-size: 14px; }
+  .who-we-are-main .who-we-are-title img {
+    margin-top: 70px; }
+  .who-we-are-main .who-we-are-title h1 {
+    font-size: 7.5vw; }
+  .who-we-are-main .who-we-are-title p {
+    font-size: 14px; }
+  .who-we-are-main .who-we-are-title .btn-group {
+    flex-direction: column;
+    align-items: center; }
+    .who-we-are-main .who-we-are-title .btn-group button:first-child {
+      margin-right: 0; }
+    .who-we-are-main .who-we-are-title .btn-group button:last-child {
+      margin-top: 20px; } }
+
 .features-main {
   position: relative; }
   .features-main .features-title {
