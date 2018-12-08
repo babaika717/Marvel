@@ -149,3 +149,57 @@
   margin-left: 7px;
   transition: all .3s;
 }
+
+@media screen and (max-width: 1150px) {
+
+  .soc-icons-main .icons-wrapper .soc-icons-phone {
+    margin-left: 20px;
+  }
+
+}
+
+@media screen and (max-width: 991px) {
+
+  .soc-icons-main .icons-wrapper .soc-icons-phone a {
+    min-width: 170px;
+  }
+
+  .soc-icons-main .icons-wrapper .soc-icons-adress span {
+    min-width: 183px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .soc-icons-main .icons-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .soc-icons-main .icons-wrapper .soc-icons-phone {
+    margin-left: 0;
+  }
+
+  .soc-icons-main .icons-wrapper .soc-icons-phone a {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .soc-icons-main .icons-wrapper .soc-icons-footer {
+    margin-bottom: 20px;
+  }
+
+  .soc-icons-main .icons-wrapper .soc-icons-adress span {
+    margin-top: 20px;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+
+  .locate-us-main .locate-title h1 {
+    font-size: 8vw;
+  }
+
+}

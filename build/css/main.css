@@ -605,6 +605,8 @@
 @media screen and (max-width: 600px) {
   .responsive-main .responsive-title .responsive-desc .responsive__running-human {
     display: none; }
+  .responsive-main .responsive-title {
+    margin-top: 70px; }
   .responsive-main .responsive-title span {
     font-size: 13vw; }
   .responsive-main .responsive-title .responsive-desc h3 {
@@ -681,6 +683,39 @@
             text-align: left;
             font-family: 'Muli', sans-serif;
             font-size: 15px; }
+
+@media screen and (max-width: 1200px) {
+  .features-main .features-title .features-icons-wrapper .features-icons {
+    flex: 0 0 50%;
+    justify-content: center; }
+    .features-main .features-title .features-icons-wrapper .features-icons:last-child {
+      margin-right: auto; } }
+
+@media screen and (max-width: 768px) {
+  .features-main .features-title .features-icons-wrapper .features-icons {
+    flex: 0 0 100%; } }
+
+@media screen and (max-width: 600px) {
+  .features-main .features-title span {
+    font-size: 16vw; }
+  .features-main .features-title h2 {
+    font-size: 4.5vw;
+    line-height: 1; }
+  .features-main .features-title .features-icons-wrapper {
+    margin-top: 70px; } }
+
+@media screen and (max-width: 474px) {
+  .features-main .features-title .features-icons-wrapper .features-icons {
+    flex-direction: column;
+    align-items: center; }
+    .features-main .features-title .features-icons-wrapper .features-icons .features-desc {
+      margin-left: 0;
+      margin-bottom: 55px;
+      margin-top: 25px; }
+      .features-main .features-title .features-icons-wrapper .features-icons .features-desc h4, .features-main .features-title .features-icons-wrapper .features-icons .features-desc p {
+        text-align: center; }
+  .features-main .features-title .features-icons-wrapper .features-icons .features-desc p {
+    margin-top: 8px; } }
 
 .work-main {
   background-color: #ffe400;
@@ -1321,6 +1356,25 @@
         background: #ffe400;
         color: #000; }
 
+@media screen and (max-width: 1280px) {
+  .impressed-main {
+    background-position: 60%; } }
+
+@media screen and (max-width: 650px) {
+  .impressed-main h1 {
+    font-size: 4.7vw; } }
+
+@media screen and (max-width: 474px) {
+  .impressed-main .btn-group {
+    flex-direction: column;
+    align-items: center; }
+    .impressed-main .btn-group button:first-child {
+      margin-right: 0; }
+    .impressed-main .btn-group button:last-child {
+      margin-top: 20px; }
+  .impressed-main span {
+    font-size: 12px; } }
+
 .news-main {
   position: relative;
   text-align: center;
@@ -1514,6 +1568,22 @@
             color: #ffe400;
             transition: all .5s; }
 
+@media screen and (max-width: 850px) {
+  .contacts-main .contacts-form-wrapper form label {
+    width: 100%;
+    margin-right: 0; }
+    .contacts-main .contacts-form-wrapper form label input {
+      width: 100%; }
+  .contacts-main .contacts-form-wrapper form textarea {
+    height: auto; } }
+
+@media screen and (max-width: 600px) {
+  .contacts-main .contacts-title h1 {
+    font-size: 16vw; }
+  .contacts-main .contacts-title span {
+    font-size: 6vw;
+    line-height: 1; } }
+
 .locate-us-main {
   background: url("../img/map-bg.png") no-repeat;
   margin-bottom: -4px; }
@@ -1644,6 +1714,34 @@
           transform: rotate(-180deg);
   margin-left: 7px;
   transition: all .3s; }
+
+@media screen and (max-width: 1150px) {
+  .soc-icons-main .icons-wrapper .soc-icons-phone {
+    margin-left: 20px; } }
+
+@media screen and (max-width: 991px) {
+  .soc-icons-main .icons-wrapper .soc-icons-phone a {
+    min-width: 170px; }
+  .soc-icons-main .icons-wrapper .soc-icons-adress span {
+    min-width: 183px; } }
+
+@media screen and (max-width: 768px) {
+  .soc-icons-main .icons-wrapper {
+    flex-direction: column;
+    align-items: center; }
+  .soc-icons-main .icons-wrapper .soc-icons-phone {
+    margin-left: 0; }
+  .soc-icons-main .icons-wrapper .soc-icons-phone a {
+    margin-bottom: 20px;
+    margin-top: 20px; }
+  .soc-icons-main .icons-wrapper .soc-icons-footer {
+    margin-bottom: 20px; }
+  .soc-icons-main .icons-wrapper .soc-icons-adress span {
+    margin-top: 20px; } }
+
+@media screen and (max-width: 400px) {
+  .locate-us-main .locate-title h1 {
+    font-size: 8vw; } }
 
 html {
   overflow-x: hidden;

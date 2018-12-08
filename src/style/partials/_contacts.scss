@@ -118,3 +118,32 @@
     }
   }
 }
+
+@media screen and (max-width: 850px) {
+
+  .contacts-main .contacts-form-wrapper form label {
+    width: 100%;
+    margin-right: 0;
+    input {
+      width: 100%;
+    }
+  }
+
+  .contacts-main .contacts-form-wrapper form textarea {
+    height: auto;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .contacts-main .contacts-title h1 {
+    font-size: 16vw;
+  }
+
+  .contacts-main .contacts-title span {
+    font-size: 6vw;
+    line-height: 1;
+  }
+
+}

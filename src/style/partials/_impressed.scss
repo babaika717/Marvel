@@ -57,3 +57,38 @@
     }
   }
 }
+
+@media screen and (max-width: 1280px) {
+
+  .impressed-main {
+    background-position: 60%;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+
+  .impressed-main h1 {
+    font-size: 4.7vw;
+  }
+
+}
+
+@media screen and (max-width: 474px) {
+
+  .impressed-main .btn-group {
+    flex-direction: column;
+    align-items: center;
+    button:first-child {
+      margin-right: 0;
+    }
+    button:last-child {
+      margin-top: 20px;
+    }
+  }
+
+  .impressed-main span {
+    font-size: 12px;
+  }
+
+}
