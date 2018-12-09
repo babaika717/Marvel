@@ -102,3 +102,48 @@
     z-index: -1;
   }
 }
+
+@media screen and (max-width: 1200px) {
+
+  .service-main .service__people {
+    display: none;
+  }
+
+  .service-main .service-wrapper {
+    margin-right: auto;
+  }
+
+  .service-main .service-title {
+    margin-right: auto;
+    width: 100%;
+    h1 {
+      left: 50%;
+      transform: translate(-50%);
+    }
+    span {
+      text-align: center;
+      margin-right: 0;
+    }
+  }
+
+}
+
+@media screen and (max-width: 1050px) {
+
+  .service-main .service-wrapper {
+    width: 70%;
+  }
+
+  .service-main .service__md-circle {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .service-main .service-wrapper {
+    width: 100%;
+  }
+
+}
