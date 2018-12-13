@@ -1,4 +1,6 @@
 //map toggle
+
+
     $('.locate-title h1').on('click', function () {
         $(this).parent().parent().parent().children('iframe').slideToggle(250);
         $(this).find('i').toggleClass('map-opened');
@@ -26,5 +28,7 @@
 
 
     $('.header-hamburger-menu').on('click', function () {
+       $(this).parent().parent().parent('.main-menu').toggleClass('fixed-main-menu');
        $(this).toggleClass('menu-opened');
+       $(this).parent().children('.mobile-menu__wrapper').toggleClass('opened-menu-wrapper');
     });
