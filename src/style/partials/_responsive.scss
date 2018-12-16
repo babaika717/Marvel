@@ -183,6 +183,8 @@
   }
 }
 
+/*MEDIA*/
+
 @media screen and (max-width: 1680px) {
 
   .responsive-main .responsive__light-lamp {
@@ -263,6 +265,11 @@
 
   .who-we-are-main .who-we-are-title p {
     font-size: 14px;
+  }
+
+  .who-we-are-main .who-we-are-title .btn-group .more-info-btn span,
+  .who-we-are-main .who-we-are-title .btn-group .join-btn span {
+    font-size: 16px;
   }
 
   .who-we-are-main .who-we-are-title .btn-group {

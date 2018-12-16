@@ -103,6 +103,8 @@
   }
 }
 
+/*MEDIA*/
+
 @media screen and (max-width: 1200px) {
 
   .service-main .service__people {
@@ -144,6 +146,50 @@
 
   .service-main .service-wrapper {
     width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .service-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-main .service-wrapper .service-block {
+    border-right: none;
+    padding-right: 0;
+  }
+
+  .service-main .service-wrapper .service-block:nth-child(2) {
+    padding-left: 0;
+    padding-top: 60px;
+  }
+
+  .service-main .service-wrapper .service-block:nth-child(3) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .service-main .service-wrapper .service-block:last-child {
+    padding-left: 0;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .service-main .service-title h1 {
+    padding-left: 0;
+    font-size: 20vw;
+  }
+
+  .service-main .service-title span {
+    font-size: 5vw;
+    line-height: 2;
   }
 
 }

@@ -31,4 +31,12 @@
        $(this).parent().parent().parent('.main-menu').toggleClass('fixed-main-menu');
        $(this).toggleClass('menu-opened');
        $(this).parent().children('.mobile-menu__wrapper').toggleClass('opened-menu-wrapper');
+
+        if ($('.header-hamburger-menu').hasClass('menu-opened')) {
+            $('html').css('overflow', 'hidden');
+        } else {
+            $('html').css('overflow', '');
+        }
+
     });
+

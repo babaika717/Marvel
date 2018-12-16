@@ -119,6 +119,14 @@
   }
 }
 
+@media screen and (max-width: 991px) {
+
+  .contacts-main .contacts-form-wrapper form textarea {
+    height: 350px;
+  }
+
+}
+
 @media screen and (max-width: 850px) {
 
   .contacts-main .contacts-form-wrapper form label {
